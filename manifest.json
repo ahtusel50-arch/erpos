@@ -2,7 +2,8 @@
   "name": "ERPOS Mobile Pro",
   "short_name": "ERPOS",
   "description": "El Terminali ERP Sistemi",
-  "start_url": "/erpos-mobile-pro.html",
+  "start_url": "/erpos/erpos-mobile-pro.html",
+  "scope": "/erpos/",
   "id": "erpos",
   "display": "standalone",
   "background_color": "#1C1C1E",
@@ -11,9 +12,15 @@
   "lang": "tr",
   "icons": [
     {
-      "src": "data:image/svg+xml,&amp;lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'&amp;gt;&amp;lt;rect width='512' height='512' rx='80' fill='%233B82F6'/&amp;gt;&amp;lt;text x='50%25' y='55%25' font-size='280' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='middle'&amp;gt;E&amp;lt;/text&amp;gt;&amp;lt;/svg&amp;gt;",
+      "src": "/erpos/erpos-icon-512.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/erpos/erpos-icon-512.png",
       "sizes": "512x512",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ]
