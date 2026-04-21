@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cihaz Bilgisi</title>
+<style>body{background:#1C1C1E;color:#fff;font-family:monospace;padding:20px;font-size:13px;}
+.box{background:#2C2C2E;border-radius:8px;padding:14px;margin-bottom:10px;word-break:break-all;}
+.label{color:#60A5FA;font-size:11px;margin-bottom:4px;font-weight:700;}</style>
+</head>
+<body>
+<h2 style="color:#3B82F6">Cihaz Bilgisi</h2>
+<div class="box"><div class="label">User Agent</div><div id="ua"></div></div>
+<div class="box"><div class="label">Android Versiyonu</div><div id="av"></div></div>
+<div class="box"><div class="label">Chrome Versiyonu</div><div id="cv"></div></div>
+<div class="box"><div class="label">Ekran</div><div id="ekran"></div></div>
+<script>
+var ua = navigator.userAgent;
+document.getElementById('ua').textContent = ua;
+var av = ua.match(/Android ([0-9.]+)/);
+document.getElementById('av').textContent = av ? av[1] : 'Bulunamadi';
+var cv = ua.match(/Chrome\/([0-9.]+)/);
+document.getElementById('cv').textContent = cv ? cv[1] : 'Bulunamadi';
+document.getElementById('ekran').textContent = window.screen.width + 'x' + window.screen.height + ' / ' + window.innerWidth + 'x' + window.innerHeight;
+</script>
+</body>
+</html>
